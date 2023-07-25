@@ -1,0 +1,22 @@
+<h1 style="text-align: center;margin: 2%;">Student Details Form</h1>
+<form action="/teacher/create" method="post"> 
+
+    <div class="mb-3" style="margin-left: 25%;margin-right: 25%;">
+
+    <label for="name" class="form-label">Name: </label> 
+    <input type="text" class="form-control" id="name" name="name" required>
+
+    <label for="rollno" class="form-label">Roll Number:</label> 
+    <input type="text" class="form-control" id="rollno" name="rollno" required>
+
+    <label for="dob" class="form-label">Date of Birth:</label> 
+    <input type="date" class="form-control" id="dob" name="dob" required>
+
+    <label for="score" class="form-label">Score:</label> 
+    <input type="number" class="form-control" id="score" name="score" min="0" max="100" required>
+     <br>
+    <input type="submit" value="Submit"> 
+
+    </div>
+
+</form>

@@ -1,0 +1,48 @@
+<style>
+    th,td{
+        text-align: center;
+    }
+ 
+    </style>
+
+
+
+    <div >
+        <a href="/teacher/addrecord">
+        <button style="margin-left: 85%; margin-top: 1%;" type="button" class="btn btn-primary btn-lg">Add Record</button>
+        </a>        
+    <div>
+
+
+<div style="margin:3%;">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th scope="col">RollNo</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">DOB</th>
+                    <th scope="col">Score</th>
+                    <th scope="col">action</th>
+                  </tr>
+              </thead>
+              <tbody>
+                <% students.forEach((student) => { %>
+                    <tr>
+                        <td><%= student.rollno %></td>
+                        <td><%= student.name %></td>
+                        <td><%= student.dob %></td>
+                        <td><%= student.score %></td>
+                        <td>
+                          
+                          <button class="btn btn-primary">Edit</button>
+                          <a href="/teacher/delete/<%= student._id %> ">
+                          <button class="btn btn-danger" >Delete</button></a>
+                        </td>
+                    </tr>
+                        </td>
+                    </tr>
+                  <% }); %>
+                
+              </tbody>
+        </table> 
+    </div>
